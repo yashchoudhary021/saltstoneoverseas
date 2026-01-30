@@ -14,13 +14,37 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: white;
+/* body {
+  background-image: url("/background.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: auto;
+
   color: #1f2937;
-  font-family: var(--font-inter), system-ui, sans-serif;
+  font-family: var(--font-poppins), system-ui, sans-serif;
+  line-height: 1.6;
+} */
+body {
+  background-image:
+    linear-gradient(
+      rgba(11, 42, 63, 0.08),
+      rgba(11, 42, 63, 0.08)
+    ),
+    url("/background.jpg");
+
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  /* 👇 Makes pattern feel FAR, not loud */
+  background-size: 250px 250px;
+
+  /* color: #0f1f36; */
+  color: #1d3e68;
+  font-family: var(--font-poppins), system-ui, sans-serif;
   line-height: 1.6;
 }
-
 /* Animations */
 @keyframes fade-in {
   from {

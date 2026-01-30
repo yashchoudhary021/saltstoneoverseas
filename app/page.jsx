@@ -13,7 +13,7 @@ export default function Home() {
       <WhyChooseUs />
       <GlobalPresence />
       <QualityProcess />
-      <Certifications />
+      {/* <Certifications /> */}
       <CallToAction />
     </>
   );
