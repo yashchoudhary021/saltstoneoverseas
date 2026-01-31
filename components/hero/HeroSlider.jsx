@@ -51,34 +51,38 @@ export default function HeroSlider() {
   const slide = slides[current];
 
   return (
-    <section className="relative min-h-[calc(100vh-80px)] w-full overflow-hidden">
+    // <section className="relative h-screen w-full overflow-hidden">
+    <section className="h-screen w-full overflow-hidden">
       {/* Background Images */}
       {slides.map((s, index) => (
         <div
-          key={index} className={`absolute inset-0 transition-opacity duration-1000 ${index === current ? "opacity-100" : "opacity-0"}`}
+          key={index}
+          className={`absolute inset-0 transition-opacity duration-1000 ${index === current ? "opacity-100" : "opacity-0"
+            }`}
           style={{
-            backgroundImage: `url(${s.image})`, backgroundSize: "cover", backgroundPosition: "center",
+            backgroundImage: `url(${s.image})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
           }}
         />
       ))}
 
       {/* Overlay */}
-      {/* <div className={`absolute inset-0 transition-colors duration-700 ${slide.overlay}`}/> */}
-
-        <div
-            className="absolute inset-0 transition-opacity duration-700"
-            style={{
-                background:
-                slide.type === "light"
-                    ? "linear-gradient(to bottom, rgba(11,42,63,0.15), rgba(11,42,63,0.25))"
-                    : "linear-gradient(to bottom, rgba(0,0,0,0.30), rgba(0,0,0,0.45))",
-            }}
-        />
+      <div
+        className="absolute inset-0 transition-opacity duration-700"
+        style={{
+          background:
+            slide.type === "light"
+              ? "linear-gradient(to bottom, rgba(11,42,63,0.15), rgba(11,42,63,0.30))"
+              : "linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.55))",
+        }}
+      />
 
       {/* Content */}
-      <div className="relative z-10 min-h-[calc(100vh-80px)] flex items-center">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="max-w-3xl animate-fade-in">
+      <div className="relative z-10 h-full flex items-center">
+        <div className="w-full max-w-7xl mx-auto px-6">
+          <div className="max-w-2xl animate-fade-in">
             <h1
               className={`text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight ${slide.textColor}`}
             >
@@ -102,14 +106,14 @@ export default function HeroSlider() {
             onClick={() => setCurrent(index)}
             aria-label={`Go to slide ${index + 1}`}
             className={`h-2.5 w-2.5 rounded-full transition-all duration-300
-              ${
-                current === index
-                  ? "bg-white scale-125"
-                  : "bg-white/50 hover:bg-white"
+          ${current === index
+                ? "bg-white scale-125"
+                : "bg-white/50 hover:bg-white"
               }`}
           />
         ))}
       </div>
     </section>
+
   );
 }

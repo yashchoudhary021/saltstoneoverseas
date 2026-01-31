@@ -60,3 +60,7 @@ body {
 .animate-fade-in {
   animation: fade-in 1s ease-out;
 }
+
+.filter-brand-navy {
+  filter: invert(14%) sepia(25%) saturate(1100%) hue-rotate(185deg) brightness(90%) contrast(95%);
+}

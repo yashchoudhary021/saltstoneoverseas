@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function WhatWeDo() {
   return (
     <section className="relative py-15">
@@ -60,9 +62,14 @@ const products = [
     title: "Coal",
     description: "High-quality imported coal for industrial and bulk usage.",
     icon: (
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0B2A3F" strokeWidth="1.5">
-        <path d="M3 21h18M5 21V9l7-6 7 6v12" />
-      </svg>
+      <Image
+        src="/products/coal truck.webp"
+        alt="Coal Transportation"
+        width={48}
+        height={48}
+        className="mx-auto object-contain"
+        priority={false}
+      />
     ),
   },
   {

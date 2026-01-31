@@ -1,6 +1,6 @@
 export default function OperationsHero() {
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-24">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-semibold text-brand-navy">
           Our Operations

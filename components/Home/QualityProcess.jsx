@@ -36,7 +36,7 @@ export default function QualityProcess() {
 
                 {/* Step number */}
                 <div className="text-xs font-semibold tracking-wider text-brand-navy mb-2">
-                  STEP {index + 1}
+                  {/* STEP {index + 1} */}
                 </div>
 
                 {/* Title */}

@@ -2,26 +2,41 @@ import Link from "next/link";
 
 export default function OperationsCTA() {
   return (
-    <section className="py-20 bg-brand-navy">
-      <div className="max-w-7xl mx-auto px-6 text-center text-white">
+    <section className="relative py-28 bg-transparent">
+      <div className="max-w-7xl mx-auto px-6">
 
-        <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-          Partner With a Reliable Trading Company
-        </h2>
-
-        <p className="max-w-2xl mx-auto text-white/80 mb-8">
-          Get in touch with Saltstone Overseas to discuss your coal, salt, or
-          commodity requirements.
-        </p>
-
-        <Link
-          href="/contact"
-          className="inline-flex items-center justify-center
-                     rounded-full bg-white text-brand-navy
-                     px-8 py-3 font-medium hover:bg-gray-100 transition"
+        {/* Floating CTA Container */}
+        <div
+          className="
+            rounded-[40px]
+            px-8 md:px-16 py-20
+            text-center
+            bg-gradient-to-br from-brand-navy to-[#0a2233]
+            shadow-[0_30px_80px_rgba(0,0,0,0.25)]
+          "
         >
-          Contact Our Team
-        </Link>
+          <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4">
+            Partner With a Reliable Trading Company
+          </h2>
+
+          <p className="max-w-2xl mx-auto text-white/80 mb-10 text-base md:text-lg">
+            Connect with Saltstone Overseas to discuss your coal, salt, and
+            commodity trading requirements with confidence.
+          </p>
+
+          <Link
+            href="/contact"
+            className="
+              inline-flex items-center justify-center
+              rounded-full bg-white text-brand-navy
+              px-10 py-3 font-semibold
+              transition-all duration-300
+              hover:bg-gray-100 hover:scale-105
+            "
+          >
+            Contact Our Team
+          </Link>
+        </div>
 
       </div>
     </section>

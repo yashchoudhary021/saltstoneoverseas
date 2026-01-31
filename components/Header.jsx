@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <header className="w-full sticky top-6 z-50 overflow-visible">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-2">
         <div className="relative bg-white/60 backdrop-blur-md border-b border-black/5 rounded-2xl shadow-[0_22px_55px_rgba(0,0,0,0.2)] overflow-visible px-6 lg:px-10">
 
           <div className="max-w-6xl mx-auto px-4 lg:px-8 h-16 flex items-center justify-end">

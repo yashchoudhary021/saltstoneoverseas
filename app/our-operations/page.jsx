@@ -10,7 +10,7 @@ export default function OurOperationsPage() {
       <OperationsHero />
       <OperationsOverview />
       <OperationsFlow />
-      <LogisticsCompliance />
+      {/* <LogisticsCompliance /> */}
       <OperationsCTA />
     </>
   );

@@ -1,6 +1,7 @@
 export default function AboutHero() {
   return (
-    <section className="relative py-24 bg-gray-50">
+    // <section className="relative py-24 bg-gray-50">
+    <section className="relative py-24 bg-transparent">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-semibold text-brand-navy">
           About Saltstone Overseas
