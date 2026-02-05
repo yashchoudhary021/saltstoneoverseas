@@ -3,12 +3,12 @@ export default function WhyChooseAndGlobal() {
     <section className="w-full bg-[#eceff1]">
 
       {/* WHY CHOOSE US */}
-      <div className="max-w-7xl mx-auto px-6 py-24">
+      <div className="max-w-7xl mx-auto px-6 py-18">
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-4xl font-semibold text-brand-navy">
+          {/* <h2 className="text-3xl md:text-4xl font-semibold text-brand-navy">
             Why Choose Saltstone Overseas
-          </h2>
-          <p className="mt-4 max-w-3xl mx-auto text-gray-600 text-base md:text-lg">
+          </h2> */}
+          <p className="mt-2 max-w-3xl mx-auto text-gray-600 text-base md:text-lg">
             A trusted global commodity trading partner specializing in coal and
             salt, delivering consistent supply backed by strong logistics and
             international trade expertise.
@@ -44,7 +44,7 @@ export default function WhyChooseAndGlobal() {
       <div className="h-px bg-black/10 max-w-6xl mx-auto" />
 
       {/* GLOBAL PRESENCE */}
-      <div className="max-w-7xl mx-auto px-6 py-24">
+      {/* <div className="max-w-7xl mx-auto px-6 py-24">
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-4xl font-semibold text-brand-navy">
             Our Global Presence
@@ -57,7 +57,6 @@ export default function WhyChooseAndGlobal() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-          {/* LEFT */}
           <div>
             <h3 className="text-2xl font-semibold text-brand-navy mb-4">
               Serving Global Industrial Markets
@@ -75,7 +74,6 @@ export default function WhyChooseAndGlobal() {
             </div>
           </div>
 
-          {/* RIGHT */}
           <div className="bg-white/80 rounded-3xl p-10 border border-black/5 shadow-sm">
             <h4 className="text-lg font-semibold text-brand-navy mb-8">
               Export Markets
@@ -92,50 +90,50 @@ export default function WhyChooseAndGlobal() {
           </div>
 
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
 
 
-function Stat({ number, label }) {
-  return (
-    <div>
-      <p className="text-3xl md:text-4xl font-semibold text-brand-navy">
-        {number}
-      </p>
-      <p className="text-sm text-gray-600 mt-1">{label}</p>
-    </div>
-  );
-}
+// function Stat({ number, label }) {
+//   return (
+//     <div>
+//       <p className="text-3xl md:text-4xl font-semibold text-brand-navy">
+//         {number}
+//       </p>
+//       <p className="text-sm text-gray-600 mt-1">{label}</p>
+//     </div>
+//   );
+// }
 
-function CheckIcon() {
-  return (
-    <svg
-      width="18"
-      height="18"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      className="text-brand-navy flex-shrink-0"
-    >
-      <path d="M5 13l4 4L19 7" />
-    </svg>
-  );
-}
+// function CheckIcon() {
+//   return (
+//     <svg
+//       width="18"
+//       height="18"
+//       viewBox="0 0 24 24"
+//       fill="none"
+//       stroke="currentColor"
+//       strokeWidth="2"
+//       className="text-brand-navy flex-shrink-0"
+//     >
+//       <path d="M5 13l4 4L19 7" />
+//     </svg>
+//   );
+// }
 
 
-const countries = [
-  "India",
-  "United Arab Emirates",
-  "Indonesia",
-  "Vietnam",
-  "Bangladesh",
-  "United Kingdom",
-  "Africa",
-  "Europe",
-];
+// const countries = [
+//   "India",
+//   "United Arab Emirates",
+//   "Indonesia",
+//   "Vietnam",
+//   "Bangladesh",
+//   "United Kingdom",
+//   "Africa",
+//   "Europe",
+// ];
 
 
 

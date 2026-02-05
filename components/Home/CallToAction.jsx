@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function CallToAction() {
   return (
-    <section className="relative py-28">
+    <section className="relative py-20">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Floating CTA Container */}

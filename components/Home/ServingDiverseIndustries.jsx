@@ -4,13 +4,13 @@ export default function ServingDiverseIndustries() {
     return (
         <section className="relative py-20">
             {/* OUTER SECTION — DO NOT CHANGE */}
-            <div className="max-w-7xl mx-auto px-6">
+            <div className="max-w-6xl mx-auto px-6">
 
                 {/* GREY CONTAINER — FULL WIDTH */}
-                <div className="bg-[#eceff1] rounded-[40px] px-8 md:px-16 py-20 shadow-[0_30px_80px_rgba(0,0,0,0.16)] border border-black/10">
+                <div className="bg-[#eceff1] rounded-[24px] px-8 md:px-1 py-8 shadow-[0_30px_80px_rgba(0,0,0,0.16)] border border-black/10">
 
                     {/* SECTION HEADING */}
-                    <div className="text-center mb-6">
+                    <div className="text-center">
                         <h2 className="text-3xl md:text-4xl font-semibold text-brand-navy tracking-wide">
                             Serving Diverse Industries
                         </h2>
@@ -31,8 +31,8 @@ export default function ServingDiverseIndustries() {
                                         data-aos-delay={index * 120}
                                     >
                                         {/* Image */}
-                                        <div className="h-[120px] flex items-center justify-center mb-4">
-                                            <div className="relative w-[100px] h-[100px] transition-transform duration-300 group-hover:scale-115">
+                                        <div className="h-[100px] flex items-center justify-center mb-4">
+                                            <div className="relative w-[80px] h-[80px] transition-transform duration-300 group-hover:scale-107">
                                                 <Image
                                                     src={item.image}
                                                     alt={item.title}
@@ -69,23 +69,23 @@ export default function ServingDiverseIndustries() {
 
 const industries = [
     {
-        title: "Salt Trading",
-        description: "Industrial, edible, iodized, pink, and black salt supplied to domestic and international markets.",
+        title: "SALT EXPORT AND TRADING",
+        description: "Supplying industrial, Free Flow-iodised and Non-iodised , pink, and black salts across India and international markets.",
         image: "/svgs/salt.png",
     },
     {
-        title: "Coal Supply",
-        description: "High-quality imported coal for power plants, manufacturing units, and bulk industrial usage.",
+        title: "COAL SUPPLY",
+        description: "High GCV Imported coal for power, manufacturing, and bulk industrial applications",
         image: "/svgs/coal.png",
     },
     {
-        title: "Stone & Minerals",
-        description: "Natural stones and minerals used across construction, infrastructure, and industrial projects.",
+        title: "STONE & MINERALS EXPORT",
+        description: "Export of marble, granite, and natural stone products to international markets.",
         image: "/svgs/stone.png",
     },
     {
-        title: "Grains Export",
-        description: "Export-grade grains sourced from trusted producers and delivered with strict quality compliance.",
+        title: "GRAINS EXPORT",
+        description: "Structured export of quality-assured grains to global buyers.",
         image: "/svgs/grain.png",
     },
 ];

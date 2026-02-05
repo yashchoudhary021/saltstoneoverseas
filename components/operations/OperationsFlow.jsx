@@ -1,12 +1,12 @@
 export default function OperationsFlow() {
   return (
-    <section className="pt-20 pb-10 bg-transparent px-0">
+    <section className="py-10 bg-transparent px-0">
 
       <div className="w-full">
 
         {/* Floating Container */}
         {/* <div className="bg-white/90 backdrop-blur-md rounded-3xl shadow-xl px-10 py-16"> */}
-        <div className="bg-white/90 backdrop-blur-md shadow-xl px-6 md:px-16 py-30">
+        <div className="bg-[#eceff1] backdrop-blur-md shadow-xl px-6 md:px-16 py-30">
 
           {/* Heading */}
           <div className="text-center mb-14">
@@ -27,12 +27,6 @@ export default function OperationsFlow() {
                 {/* SVG Icon */}
                 <div className="flex justify-center mb-4">
                   {stepIcons[index]}
-                </div>
-
-                {/* Step Number */}
-                <div className="w-2 h-2 mx-auto mb-4 flex items-center justify-center
-                      rounded-full bg-brand-navy text-white font-semibold">
-                  {index + 1}
                 </div>
 
                 {/* Title */}

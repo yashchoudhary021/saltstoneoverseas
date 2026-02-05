@@ -4,36 +4,44 @@ import { useEffect, useState } from "react";
 
 const slides = [
   {
+    image: "/hero/ship.jpg",
+    title: "Your Trusted Export Partner",
+    subtitle: "Delivering commodities, minerals, and agricultural products to global markets with reliability and operational excellence.",
+    type: "dark",
+    textColor: "text-white/80",
+    subTextColor: "text-gray-200",
+  },
+  {
     image: "/hero/coal_banner.png",
     title: "Trusted Global Coal Import Solutions",
     subtitle: "Sourcing high-quality coal from trusted international markets.",
     type: "dark",
-    textColor: "text-white",
+    textColor: "text-white/80",
     subTextColor: "text-gray-200",
   },
   {
-    image: "/hero/salt_banner.png",
+    image: "/hero/salt_banner.jpg",
     title: "Premium Salt Exporter",
     subtitle: "Industrial, iodized, pink and black salt with customized packaging.",
     type: "light",
-    textColor: "text-brand-navy",
-    subTextColor: "text-gray-700",
+    textColor: "text-white/80",
+    subTextColor: "text-gray-200",
   },
   {
-    image: "/hero/grain_banner.png",
+    image: "/hero/grain_banner.jpg",
     title: "Grain Exports You Can Trust",
     subtitle: "Supplying quality grains to global partners with consistency.",
-    type: "dark",
-    textColor: "text-white",
+    type: "light",
+    textColor: "text-white/80",
     subTextColor: "text-gray-200",
   },
   {
     image: "/hero/stone_banner.png",
     title: "Stone & Mineral Exports",
     subtitle: "Marble, granite and natural stone for international markets.",
-    type: "light",
-    textColor: "text-brand-navy",
-    subTextColor: "text-gray-700",
+    type: "dark",
+    textColor: "text-white/80",
+    subTextColor: "text-gray-200",
   },
 ];
 
@@ -80,9 +88,10 @@ export default function HeroSlider() {
       />
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center">
-        <div className="w-full max-w-7xl mx-auto px-6">
+      <div className="relative z-10 h-full flex items-end">
+        <div className="w-full max-w-7xl mx-auto px-6 pb-16">
           <div className="max-w-2xl animate-fade-in">
+            
             <h1
               className={`text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight ${slide.textColor}`}
             >
@@ -94,9 +103,11 @@ export default function HeroSlider() {
             >
               {slide.subtitle}
             </p>
+
           </div>
         </div>
       </div>
+
 
       {/* Slider Dots */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-3">
