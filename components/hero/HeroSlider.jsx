@@ -12,8 +12,8 @@ const slides = [
     subTextColor: "text-gray-200",
   },
   {
-    image: "/hero/coal_banner.png",
-    title: "Trusted Global Coal Import Solutions",
+    image: "/hero/coal_banner.jpeg",
+    title: "Trusted Coal Supplier",
     subtitle: "Sourcing high-quality coal from trusted international markets.",
     type: "dark",
     textColor: "text-white/80",
@@ -37,7 +37,7 @@ const slides = [
   },
   {
     image: "/hero/stone_banner.png",
-    title: "Stone & Mineral Exports",
+    title: "Stone And Mineral Exports",
     subtitle: "Marble, granite and natural stone for international markets.",
     type: "dark",
     textColor: "text-white/80",
