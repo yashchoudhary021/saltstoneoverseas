@@ -1,11 +1,17 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import ClientLayout from "./ClientLayout";
 
 const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-inter",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-playfair",
 });
 
 export const metadata = {
@@ -20,8 +26,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body className="font-sans text-gray-800 antialiased">
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+      <body className="text-gray-800 antialiased">
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>

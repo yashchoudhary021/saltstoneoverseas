@@ -62,7 +62,7 @@ export default function Header() {
                   href={item.href}
                   className="relative font-semibold tracking-wide text-[#1d3e68] after:absolute after:left-0 after:-bottom-1 after:h-[1.5px] after:w-0 after:bg-[#1d3e68] after:transition-all hover:after:w-full"
                 >
-                  {item.label}
+                  <h4>{item.label}</h4>
                 </Link>
               ))}
             </nav>

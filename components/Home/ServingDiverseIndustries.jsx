@@ -10,13 +10,13 @@ export default function ServingDiverseIndustries() {
                 <div className="bg-[#eceff1] rounded-[24px] px-8 md:px-1 py-8 shadow-[0_30px_80px_rgba(0,0,0,0.16)] border border-black/10">
 
                     {/* SECTION HEADING */}
-                    <div className="text-center">
+                    {/* <div className="text-center">
                         <h2 className="text-3xl md:text-4xl font-semibold text-brand-navy tracking-wide">
                             Serving Diverse Industries
                         </h2>
                         <div className="w-24 h-1 bg-brand-navy mx-auto mt-4 mb-6" />
                        
-                    </div>
+                    </div> */}
 
                     {/* WHITE CARD AREA — NARROWER WIDTH */}
                     
@@ -79,7 +79,7 @@ const industries = [
         image: "/svgs/coal.png",
     },
     {
-        title: "STONE & MINERALS EXPORT",
+        title: "STONE AND MINERALS EXPORT",
         description: "Export of marble, granite, and natural stone products to international markets.",
         image: "/svgs/stone.png",
     },
