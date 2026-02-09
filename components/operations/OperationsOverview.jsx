@@ -62,7 +62,7 @@ const operations = [
 
 export default function OperationsOverview() {
   return (
-    <section className="py-20 bg-[#eceff1]">
+    <section className="py-20 mb-10 bg-[#eceff1]">
       <div className="max-w-7xl mx-auto px-6 space-y-5">
 
         {operations.map((item, index) => {

@@ -25,6 +25,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className="text-gray-800 antialiased">

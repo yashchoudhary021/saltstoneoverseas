@@ -1,21 +1,22 @@
 import AboutHero from "@/components/about/AboutHero";
-import CompanyOverview from "@/components/about/CompanyOverview";
-import MissionVision from "@/components/about/MissionVision";
-import OurValues from "@/components/about/OurValues";
-import WhySaltstone from "@/components/about/WhySaltstone";
+import AboutCompany from "@/components/about/AboutCompany";
+import Leadership from "@/components/about/Leadership";
+import Certifications from "@/components/about/Certifications";
 import AboutCTA from "@/components/about/AboutCTA";
-import AboutFoundation from "@/components/about/AboutFoundation";
 
 export default function AboutPage() {
   return (
-    <>
+    <div>
+
       <AboutHero />
-      <CompanyOverview />
-      <AboutFoundation />
-      {/* <MissionVision />
-      <OurValues />
-      <WhySaltstone /> */}
-      <AboutCTA />
-    </>
+
+      <div className="relative z-10 bg-white">
+        <AboutCompany />
+        <Leadership />
+        <Certifications />
+        <AboutCTA />
+      </div>
+
+    </div>
   );
 }

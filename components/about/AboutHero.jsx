@@ -1,15 +1,17 @@
 export default function AboutHero() {
   return (
-    // <section className="relative py-24 bg-gray-50">
-    <section className="relative py-24 bg-transparent">
-      <div className="max-w-7xl mx-auto px-6 text-center">
-        <h1 className="text-4xl md:text-5xl font-semibold text-brand-navy">
-          About Saltstone Overseas
+    <section
+      className="sticky top-0 h-screen bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/company.jpg')",
+      }}
+    >
+      <div className="absolute inset-0 bg-black/40"></div>
+
+      <div className="absolute bottom-16 left-16 text-white">
+        <h1 className="text-5xl md:text-6xl font-bold tracking-wide">
+          About
         </h1>
-        <p className="mt-4 max-w-3xl mx-auto text-gray-600">
-          A global commodity trading company specializing in coal and salt,
-          serving industrial and international markets with reliability and trust.
-        </p>
       </div>
     </section>
   );

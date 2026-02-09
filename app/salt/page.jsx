@@ -23,7 +23,7 @@ export default function SaltPage() {
 
       {/* Salt Product Portfolio */}
       <section className="pt-30 pb-10 bg-[#eceff1]">
-        <div className="relative h-[550px] w-full overflow-hidden">
+        <div className="relative h-[500px] w-full overflow-hidden">
 
           {/* Background Image */}
           <Image
@@ -34,7 +34,7 @@ export default function SaltPage() {
           />
 
           {/* Fixed Glass Card 60% Width */}
-          <div className="absolute bottom-0 left-0 w-[60%] bg-white/75 backdrop-blur-md shadow-xl rounded-tr-xl p-2">
+          <div className="absolute bottom-0 left-0 w-[80%] bg-white/40 backdrop-blur-md shadow-xl rounded-tr-xl p-2">
             <div className="group">
 
               {/* Heading */}
@@ -119,49 +119,56 @@ export default function SaltPage() {
         </div>
       </section>
 
-      {/* Customization & Packaging */}
-      <section className="pt-0 pb-20 bg-[#eceff1]">
+      {/* Customization & Packaging - Card Section */}
+      <section className="pt-3 pb-20 bg-[#eceff1]">
         <div className="max-w-7xl mx-auto px-6">
 
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1d3e68] mb-6">
-            Customization And Processing Capabilities
-          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          <ul className="list-disc pl-5 text-gray-600 space-y-3 mb-8">
-            <li>Grade and purity adjustments</li>
-            <li>Free-flow processing as required</li>
-            <li>Particle size and moisture control</li>
-            <li>Application-specific specifications</li>
-          </ul>
+            {/* Card 1 */}
+            <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-8 border border-gray-100">
+              <h3 className="text-2xl font-semibold text-[#1d3e68] mb-6">
+                Custom And Processing
+              </h3>
+              <ul className="space-y-3 text-gray-600 leading-relaxed">
+                <li>• Grade and purity adjustments</li>
+                <li>• Free-flow processing as required</li>
+                <li>• Particle size and moisture control</li>
+                <li>• Application-specific specifications</li>
+              </ul>
+            </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1d3e68] mb-6 mt-16">
-            Packaging Solutions
-          </h2>
+            {/* Card 2 */}
+            <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-8 border border-gray-100">
+              <h3 className="text-2xl font-semibold text-[#1d3e68] mb-6">
+                Packaging Solutions
+              </h3>
+              <ul className="space-y-3 text-gray-600 leading-relaxed">
+                <li>• Bulk packaging</li>
+                <li>• Industrial-grade bags</li>
+                <li>• Consumer and institutional packs</li>
+                <li>• Export-ready packaging as per buyer specifications</li>
+              </ul>
+            </div>
 
-          <ul className="list-disc pl-5 text-gray-600 space-y-3 mb-8">
-            <li>Bulk packaging</li>
-            <li>Industrial-grade bags</li>
-            <li>Consumer and institutional packs</li>
-            <li>Export-ready packaging as per buyer specifications</li>
-          </ul>
+            {/* Card 3 */}
+            <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-8 border border-gray-100">
+              <h3 className="text-2xl font-semibold text-[#1d3e68] mb-6">
+                Reliable Supply Execution
+              </h3>
+              <ul className="space-y-3 text-gray-600 leading-relaxed">
+                <li>• Quality-focused sourcing and processing</li>
+                <li>• Organized logistics and dispatch planning</li>
+                <li>• Structured documentation for domestic and export trade</li>
+                <li>• Long-term, relationship-driven supply approach</li>
+              </ul>
+            </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1d3e68] mb-6 mt-16">
-            Reliable Supply Execution
-          </h2>
-
-          <ul className="list-disc pl-5 text-gray-600 space-y-3">
-            <li>Quality-focused sourcing and processing</li>
-            <li>Organized logistics and dispatch planning</li>
-            <li>Structured documentation for domestic and export trade</li>
-            <li>A long-term, relationship-driven supply approach</li>
-          </ul>
-
-          <p className="mt-8 text-gray-600 leading-relaxed">
-            SaltStone Overseas aims to build dependable partnerships by delivering salt products that meet functional, regulatory, and commercial expectations across markets.
-          </p>
+          </div>
 
         </div>
       </section>
+
 
     </div>
   );
