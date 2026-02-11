@@ -1,8 +1,9 @@
 import Image from "next/image";
+import OperationsCTA from "@/components/operations/OperationsCTA";
 
 export default function CoalPage() {
-    return (
-        <div className="">
+    return (<div className="">
+        <div>
 
             {/* Hero Section (No Background Now) */}
             <section
@@ -140,21 +141,70 @@ export default function CoalPage() {
             {/* Applications */}
             <section className="py-20 bg-[#eceff1] mt-20">
                 <div className="max-w-7xl mx-auto px-6">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#1d3e68] mb-8">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#1d3e68] mb-12">
                         Applications
                     </h2>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div className="bg-white p-6 shadow-sm">Power plants</div>
-                        <div className="bg-white p-6 shadow-sm">Manufacturing and processing units</div>
-                        <div className="bg-white p-6 shadow-sm">Industrial boilers and furnaces</div>
-                        <div className="bg-white p-6 shadow-sm">Cement, textile, and large-scale industrial operations</div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                        {/* Card 1 */}
+                        <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                            <div className="relative h-56">
+                                <Image
+                                    src="/coal/power-1.jpg"   // put image inside public/images
+                                    alt="Power Plants"
+                                    fill
+                                    className="object-cover hover:scale-110 transition duration-500"
+                                />
+                            </div>
+                            <div className="p-6">
+                                <h3 className="text-xl font-semibold text-[#1d3e68]">
+                                    Power Plants
+                                </h3>
+                            </div>
+                        </div>
+
+                        {/* Card 2 */}
+                        <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                            <div className="relative h-56">
+                                <Image
+                                    src="/coal/power-2.jpg"
+                                    alt="Industrial Boilers"
+                                    fill
+                                    className="object-cover hover:scale-110 transition duration-500"
+                                />
+                            </div>
+                            <div className="p-6">
+                                <h3 className="text-xl font-semibold text-[#1d3e68]">
+                                    Industrial Boilers And Furnaces
+                                </h3>
+                            </div>
+                        </div>
+
+                        {/* Card 3 */}
+                        <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                            <div className="relative h-56">
+                                <Image
+                                    src="/coal/power-3.jpg"
+                                    alt="Cement Textile Industry"
+                                    fill
+                                    className="object-cover hover:scale-110 transition duration-500"
+                                />
+                            </div>
+                            <div className="p-6">
+                                <h3 className="text-xl font-semibold text-[#1d3e68]">
+                                    Cement, Textile And Large-Scale Industries
+                                </h3>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
 
+
             {/* Reliable Trade Execution */}
-            <section className="py-20 bg-[#eceff1] mt-20 mb-20">
+            <section className="py-20 bg-[#eceff1] mt-20 mb-12">
                 <div className="max-w-7xl mx-auto px-6">
                     <h2 className="text-3xl md:text-4xl font-bold text-[#1d3e68] mb-8">
                         Reliable Trade Execution
@@ -175,5 +225,7 @@ export default function CoalPage() {
             </section>
 
         </div>
+        <OperationsCTA />
+    </div>
     );
 }

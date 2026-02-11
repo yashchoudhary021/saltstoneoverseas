@@ -1,8 +1,9 @@
+import OperationsCTA from "@/components/operations/OperationsCTA";
 import Image from "next/image";
 
 export default function SaltPage() {
-  return (
-    <div>
+  return (<>
+    <div className="mb-12">
 
       {/* Hero Section */}
       <section
@@ -19,30 +20,56 @@ export default function SaltPage() {
         </div>
       </section>
 
+      <section className="relative pb-0">
 
+        <div className="bg-[#eceff1] shadow-[0_25px_60px_rgba(0,0,0,0.08)] py-28">
+
+          <div className="max-w-7xl mx-auto px-6">
+
+            <div className="grid md:grid-cols-[1fr_auto_1fr] items-center">
+
+              {/* Left Side */}
+              <div className="text-center md:text-right pr-20">
+                <h2 className="text-4xl md:text-4xl font-bold text-[#1d3e68] leading-snug">
+                  Global Salt Sourcing <br/> Export Excellence
+                </h2>
+              </div>
+
+              {/* Center Divider */}
+              <div className="hidden md:block w-px h-32 bg-[#1d3e68]/30"></div>
+
+              {/* Right Side */}
+              <div className="pl-20 text-center md:text-left mt-6 md:mt-0 max-w-lg">
+                <p className="text-gray-600 text-md leading-relaxed">
+                  SaltStone Overseas is a leading supplier of premium grade industrial and edible salt, trusted by global buyers for consistent quality and reliable bulk exports.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
 
       {/* Salt Product Portfolio */}
-      <section className="pt-30 pb-10 bg-[#eceff1]">
+      {/* <section className="pt-30 pb-10 bg-[#eceff1]">
         <div className="relative h-[500px] w-full overflow-hidden">
 
-          {/* Background Image */}
           <Image
-            src="/salt/salt-1.jpg"
+            src="/salt/saltposter.jpg"
             alt="Salt Product Portfolio"
             fill
             className="object-cover"
           />
 
-          {/* Fixed Glass Card 60% Width */}
-          <div className="absolute bottom-0 left-0 w-[80%] bg-white/40 backdrop-blur-md shadow-xl rounded-tr-xl p-2">
+          <div className="absolute bottom-0 left-0 w-[80%] bg-white/40 backdrop-blur-md shadow-xl rounded-tr-xl p-2 border-t border-r border-[#1d3e68]/90">
             <div className="group">
 
-              {/* Heading */}
               <h2 className="text-3xl md:text-4xl font-bold text-[#1d3e68] cursor-pointer">
                 Salt Product Portfolio
               </h2>
-
-              {/* Content Appears On Hover */}
               <div
                 className="
             opacity-0 max-h-0 overflow-hidden
@@ -80,7 +107,68 @@ export default function SaltPage() {
           </div>
 
         </div>
+      </section> */}
+
+      <section className="pt-20 pb-10 bg-[#eceff1]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1d3e68] mb-10">
+            Salt Product Portfolio
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            {[
+              {
+                img: "/salt/non_salt.jpg",
+                title: "Non-Iodised Salt",
+                desc: "Processed salt designed for industrial and food-processing usage where iodine addition is not required."
+              },
+              {
+                img: "/salt/iodide_salt.jpg",
+                title: "Iodised Salt",
+                desc: "Consumer and institutional-grade iodised salt processed for uniformity, flowability, and compliance."
+              },
+              {
+                img: "/salt/pink_salt.jpg",
+                title: "Pink Salt",
+                desc: "Natural pink salt supplied in various grades and forms for culinary, wellness, and specialty markets."
+              },
+              {
+                img: "/salt/black_salt.png",
+                title: "Black Salt",
+                desc: "Mineral-rich processed salt used for food, gourmet, and specialty applications."
+              }
+            ].map((product, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300"
+              >
+                <div className="relative h-44 w-full">
+                  <Image
+                    src={product.img}
+                    alt={product.title}
+                    fill
+                    className="object-cover rounded-t-xl"
+                  />
+                </div>
+
+                <div className="p-5">
+                  <h3 className="font-semibold text-[#1d3e68] mb-3 text-lg">
+                    {product.title}
+                  </h3>
+
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    {product.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+
+          </div>
+        </div>
       </section>
+
 
       {/* Domestic Supply & Global Exports */}
       <section className="py-20 bg-[#eceff1]">
@@ -98,7 +186,7 @@ export default function SaltPage() {
           <div className="absolute inset-0 bg-black/20"></div>
 
           {/* Floating Content Card (Right Side) */}
-          <div className="absolute right-10 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-md p-10 w-[500px] shadow-xl rounded-xl">
+          <div className="absolute left-10 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-md p-10 w-[500px] shadow-xl rounded-xl">
 
             <h2 className="text-2xl md:text-3xl font-semibold text-[#1d3e68] mb-6">
               Domestic Supply And Global Exports
@@ -171,5 +259,7 @@ export default function SaltPage() {
 
 
     </div>
+    <OperationsCTA />
+  </>
   );
 }

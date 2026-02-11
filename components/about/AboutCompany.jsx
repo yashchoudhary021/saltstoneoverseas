@@ -9,28 +9,26 @@ export default function AboutCompany() {
           <div className="space-y-8 text-gray-700 text-lg leading-relaxed">
 
             <h2 className="text-3xl md:text-4xl font-bold text-[#1d3e68]">
-              Our Story And Global Presence
+              Building Trust Through Trade And Global Exports
             </h2>
 
             <p>
-              SaltStone Overseas Private Limited is a globally focused trading and 
-              export company with a strong legacy in the salt and commodities industry. 
-              Established in 2002 and strengthened for international operations in 2014, 
-              we specialize in sourcing, processing, and supplying high-quality salt 
-              and allied products to domestic and global markets.
+              SaltStone Overseas Private Limited is a diversified trading and export enterprise built on integrity, operational discipline, and long-term partnerships. With a strong foundation in domestic trading and a growing international export presence, we operate at the intersection of reliability and global opportunity.
+            </p><p>
+              Our company is structured around two core verticals — Domestic Trading and International Exports — enabling us to serve both local industries and global markets with consistency and professionalism.
+            </p>
+
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1d3e68]">
+              Our Journey
+            </h2>
+
+            <p>
+              SaltStone Overseas Private Limited was established with a clear objective — to create a dependable trading house that bridges domestic strength with global outreach.
             </p>
 
             <p>
-              With decades of hands-on industry experience, we have built a reputation 
-              for consistent quality, ethical business practices, and dependable 
-              supply chains backed by deep market understanding and reliable logistics.
-            </p>
-
-            <p>
-              We deal in Industrial Salt, Edible Salt, Black Salt, Pink Salt, and 
-              selected agricultural commodities. Under our Indian consumer brand 
-              <span className="font-semibold text-[#1d3e68]"> “Tirth Salt”</span>, 
-              we serve the domestic market with safe and hygienic products.
+              From focused commodity trading to expanding into structured export operations, our growth has been guided by disciplined execution, ethical business conduct, and customer trust.
+              Every transaction we undertake is built on transparency, accuracy, and long-term relationship building.
             </p>
 
           </div>
@@ -38,13 +36,12 @@ export default function AboutCompany() {
           {/* Right Highlight Block */}
           <div className="bg-[#f4f7fa] p-12 rounded-2xl shadow-md">
             <h3 className="text-2xl font-semibold text-[#1d3e68] mb-6">
-              Our Mission
+              Our Vision
             </h3>
 
             <p className="text-gray-700 leading-relaxed text-lg">
-              To deliver purity, reliability, and value across borders. Every shipment 
-              reflects our commitment to quality control, timely delivery, regulatory 
-              compliance, and long-term global partnerships.
+              To establish SaltStone Overseas Private Limited as a trusted global trading and export partner, recognized for reliability, structured operations, and consistent quality across commodities.
+
             </p>
           </div>
 

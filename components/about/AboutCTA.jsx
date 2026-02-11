@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function AboutCTA() {
   return (
-    <section className="relative py-28 bg-transparent">
+    <section className="relative py-24 bg-transparent">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Floating CTA Container */}

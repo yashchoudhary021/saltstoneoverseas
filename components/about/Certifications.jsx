@@ -35,7 +35,7 @@ export default function Certifications() {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-[#1d3e68] mb-4">
-            Certifications & Compliance
+            Certifications And Compliance
           </h2>
           <p className="text-gray-600">
             We adhere to internationally recognized standards and regulatory frameworks.

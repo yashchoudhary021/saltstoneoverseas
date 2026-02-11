@@ -7,7 +7,7 @@ export default function OurOperationsPage() {
     <>
       <OperationsHero />
       <OperationsOverview />
-      <OperationsCTA />
+      {/* <OperationsCTA /> */}
     </>
   );
 }

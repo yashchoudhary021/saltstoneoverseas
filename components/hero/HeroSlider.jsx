@@ -98,11 +98,11 @@ export default function HeroSlider() {
               {slide.title}
             </h1>
 
-            <p
+            {/* <p
               className={`mt-6 text-lg md:text-xl leading-relaxed ${slide.subTextColor}`}
             >
               {slide.subtitle}
-            </p>
+            </p> */}
 
           </div>
         </div>

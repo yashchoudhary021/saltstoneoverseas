@@ -45,19 +45,19 @@ const operations = [
     href: "/coal",
   },
   {
-    title: "Grains Export Operations",
-    description:
-      "Premium grain procurement and export with systematic grading, packaging, and international compliance.",
-    image: "/operations/grains.jpg",
-    href: "/grains",
-  },
-  {
     title: "Stone And Mineral Export Operations",
     description:
       "Sourcing and export of natural stones and minerals for global construction and infrastructure projects.",
     image: "/operations/stone.jpg",
     href: "/stone",
   },
+  {
+    title: "Grains Export Operations",
+    description:
+      "Premium grain procurement and export with systematic grading, packaging, and international compliance.",
+    image: "/operations/grains.jpg",
+    href: "/grains",
+  }
 ];
 
 export default function OperationsOverview() {

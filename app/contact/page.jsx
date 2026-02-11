@@ -7,7 +7,7 @@ export default function ContactPage() {
     <>
       <ContactHero />
       <ContactInfo />
-      <ContactForm />
+      {/* <ContactForm /> */}
     </>
   );
 }
