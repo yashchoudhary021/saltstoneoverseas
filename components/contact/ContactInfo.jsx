@@ -43,7 +43,7 @@ export default function ContactInfo() {
               <div>
                 <p className="font-medium">Email</p>
                 <p className="text-white">
-                  info@saltstoneoverseas.com
+                  sales@saltstoneoverseas.com
                 </p>
                 <p className="text-white">
                   support@saltstoneoverseas.com
